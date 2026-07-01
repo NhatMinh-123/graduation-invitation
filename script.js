@@ -95,7 +95,7 @@ function initGraduateAccess() {
       ],
     },
     nam: {
-      name: "Hữu Nam",
+      name: "Nguyễn Hữu Nam",
       codes: [
         "88e3956943102b9c340a869f4cf37e6cd54a013897ec8c6555482da05a140ae0",
         "ee8edc8b5587dea0ff69cd460f7fd6909e187bb885840a351a434c86d68ed4e8",
@@ -107,6 +107,7 @@ function initGraduateAccess() {
       codes: [
         "7bda4d1520c4eb6a2dac7c9d8c899a1604dcdffc3f1bb29bdcf5ee7eaee9fc03",
         "ee8edc8b5587dea0ff69cd460f7fd6909e187bb885840a351a434c86d68ed4e8",
+        "fadf4f5f6b75c2bf189ecf2cf74fd556968564315c94559bf92269699d14925e",
         "14b9007263281acc889a3d3937356119762ad13562c379f2567ea651fb491f87",
       ],
     },
@@ -267,7 +268,7 @@ function downloadCalendar() {
     `DTEND:${end}`,
     `SUMMARY:${config.eventTitle || "Lễ tốt nghiệp"}`,
     `LOCATION:${(config.locationAddress || config.locationDisplay || "").replace(/,/g, "\\,")}`,
-    "DESCRIPTION:Trân trọng kính mời bạn đến chung vui cùng Minh, Nhất Anh, Chí Nguyên, Hữu Nam và Hoàng Nhật Minh.",
+    "DESCRIPTION:Trân trọng kính mời bạn đến chung vui cùng Minh, Nhất Anh, Chí Nguyên, Nguyễn Hữu Nam và Hoàng Nhật Minh.",
     "END:VEVENT",
     "END:VCALENDAR",
   ].join("\r\n");
@@ -312,7 +313,7 @@ function initRsvp() {
     const attendance = data.get("attendance");
     const message = data.get("message");
     responseText = [
-      `Xin chào Minh, Nhất Anh, Chí Nguyên, Hữu Nam và Hoàng Nhật Minh! Mình là ${guestName}.`,
+      `Xin chào Minh, Nhất Anh, Chí Nguyên, Nguyễn Hữu Nam và Hoàng Nhật Minh! Mình là ${guestName}.`,
       `Phản hồi: ${attendance}.`,
       message ? `Lời nhắn: ${message}` : "",
     ]
@@ -351,7 +352,7 @@ function initShare() {
   $("[data-share]").addEventListener("click", async () => {
     const shareData = {
       title: "Thiệp mời Lễ tốt nghiệp",
-      text: "Trân trọng mời bạn đến chung vui trong Lễ tốt nghiệp của Minh, Nhất Anh, Chí Nguyên, Hữu Nam và Hoàng Nhật Minh!",
+      text: "Trân trọng mời bạn đến chung vui trong Lễ tốt nghiệp của Minh, Nhất Anh, Chí Nguyên, Nguyễn Hữu Nam và Hoàng Nhật Minh!",
       url: window.location.href,
     };
 
