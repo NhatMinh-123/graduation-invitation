@@ -442,6 +442,10 @@ img {
   text-transform: uppercase;
 }
 
+.statement h2 span {
+  color: #a87508;
+}
+
 .statement .section-tag {
   color: #787771;
 }
