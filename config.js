@@ -11,5 +11,5 @@ window.INVITATION_CONFIG = {
   // Có thể điền link Google Maps cụ thể; để trống sẽ tìm theo locationAddress.
   mapUrl: "",
 
-  eventTitle: "Lễ tốt nghiệp — Minh, Nhất Anh, Chí Nguyên, Hữu Nam & Hoàng Nhật Minh",
+  eventTitle: "Lễ tốt nghiệp — Minh, Nhất Anh, Chí Nguyên, Nguyễn Hữu Nam & Hoàng Nhật Minh",
 };
